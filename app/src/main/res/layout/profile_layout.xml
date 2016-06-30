@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_500"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight=".4"
+            android:text="Anna Fanna"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/name"
+            android:layout_weight=".3"
+            android:text="23 Yrs"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/close"
+            android:layout_toRightOf="@id/age"
+            android:layout_weight=".2"
+            android:text="50 mtrs"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight=".1"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/top_panel"
+        android:src="@drawable/default_profile_pic" />
+
+    <Button
+        android:id="@+id/btn_hypnotise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallery"
+        android:background="@color/teal_500"
+        android:text="@string/hypnotize"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_hypnotise"
+        android:layout_marginTop="1dp"
+        android:background="@color/teal_500"
+        android:text="@string/cancel"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>
