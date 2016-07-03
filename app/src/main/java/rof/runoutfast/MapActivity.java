@@ -208,8 +208,6 @@ public class MapActivity extends ActivityManagePermission implements OnMapReadyC
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        //mMap.getUiSettings().setRotateGesturesEnabled(false);
-        //mMap.getUiSettings().setZoomGesturesEnabled(false);
         mMap.getUiSettings().setAllGesturesEnabled(false);
         mMap.setOnMarkerClickListener(this);
     }
