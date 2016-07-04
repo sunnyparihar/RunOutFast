@@ -105,11 +105,8 @@ public class MapActivity extends ActivityManagePermission implements OnMapReadyC
             if (checkPlayServices()) {
                 // Building the GoogleApi client
                 buildGoogleApiClient();
-
                 createLocationRequest();
-
                 buildLocationSettingsRequest();
-
                 checkLocationSettings();
 
             }
